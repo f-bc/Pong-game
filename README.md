@@ -2,18 +2,6 @@
 
 A classic Pong arcade game built with **C++** and **Raylib**, featuring a responsive player paddle and a CPU opponent with basic AI. Fast, lightweight, and fun — right in your terminal's compiled binary.
 
----
-
-## 📸 Demo
-
-> _Add a gameplay GIF or screenshot here._
->
-> ![Demo Placeholder](assets/demo.gif)
->
-> _To record a demo, you can use tools like [ScreenToGif](https://www.screentogif.com/) (Windows) or `peek` (Linux)._
-
----
-
 ## ✨ Features
 
 - 🎮 **Player vs CPU** — Challenge a basic AI opponent that tracks the ball in real time
@@ -45,70 +33,6 @@ Make sure you have the following installed:
 - A C++ compiler (`g++` recommended)
 - [Raylib](https://www.raylib.com/) library
 
-#### Install Raylib
-
-**Ubuntu / Debian:**
-```bash
-sudo apt update
-sudo apt install libraylib-dev
-```
-
-**Arch Linux:**
-```bash
-sudo pacman -S raylib
-```
-
-**macOS (via Homebrew):**
-```bash
-brew install raylib
-```
-
-**Windows:**
-Download the pre-built binaries from [raylib.com/download](https://www.raylib.com/) and follow the setup guide for your IDE or compiler.
-
----
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/pong-cpp.git
-cd pong-cpp
-```
-
----
-
-### Compile
-
-```bash
-g++ -o pong main.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
-```
-
-> **Windows users**, replace the linker flags with:
-> ```bash
-> g++ -o pong.exe main.cpp -lraylib -lopengl32 -lgdi32 -lwinmm
-> ```
-
----
-
-### Run
-
-```bash
-./pong
-```
-
----
-
-### Using the Makefile _(optional)_
-
-If you have `make` installed, simply run:
-
-```bash
-make        # Build the project
-make run    # Build and run
-make clean  # Remove the compiled binary
-```
-
----
 
 ## 🎮 How to Play
 
@@ -127,17 +51,6 @@ make clean  # Remove the compiled binary
 - First to... well, keep playing — there's no win condition yet! _(See Future Improvements)_
 
 ---
-
-## 📁 Project Structure
-
-```
-pong-cpp/
-├── main.cpp          # All game logic (Ball, Paddle, CPU_paddle classes + main loop)
-├── Makefile          # Optional build automation
-├── assets/
-│   └── demo.gif      # Gameplay demo (add your own)
-└── README.md         # Project documentation
-```
 
 ### Code Overview
 
@@ -160,12 +73,6 @@ pong-cpp/
 - [ ] **Pause menu** — Press `P` to pause and resume
 - [ ] **Ball speed scaling** — Ball gradually speeds up each rally for more tension
 - [ ] **Visual polish** — Add particle effects on paddle hits and score events
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
